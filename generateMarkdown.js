@@ -47,7 +47,7 @@ function generateMarkdown(data) {
   ${data.description}
  
   
-  ## Table of Contents 
+  ## Table of Contents(#table-of-contents) 
   
   * [Installation](#installation)
   * [Usage](#usage)
@@ -77,16 +77,16 @@ function generateMarkdown(data) {
   
   ${data.contribute}
   
-  ## [Tests] (#table-of-contents)
+  ## [Tests](#table-of-contents)
 
 ${data.tests}
 
-  ## [Questions] (#table-of-contents)
+  ## [Questions](#table-of-contents)
   
   
 Contact me through [e-mail](mailto:${data.email})
 
-Connect with me through[GitHub.](https://www.github.com/${data.username})
+Connect with me through [GitHub.](https://www.github.com/${data.username})
   `;
 }
 
