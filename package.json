@@ -8,8 +8,10 @@
   },
   "author": "",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
-    "inquirer": "^8.2.5"
+    "inquirer": "^8.2.5",
+    "luxon": "^3.2.0"
   },
   "repository": {
     "type": "git",
