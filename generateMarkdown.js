@@ -3,8 +3,7 @@
 function renderLicenseBadge(license) {
   { 
     if (license !== 'none') {
-      return `
-    [badge](https://img.shields.io/badge/license-${license}-blueviolet)
+      return `[![badge](https://img.shields.io/badge/license-${license}-blueviolet)
       `;
     } else {
       return ' ';
@@ -18,7 +17,7 @@ function renderLicenseBadge(license) {
     if (license !== 'none') {
     return `
     [${license}](https://choosealicense.com/licenses/${license})
-      `;
+  `;
     } else {
       return ' ';
     }
@@ -29,9 +28,8 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'none') {
-    return `
-    ## [License](#license)
-    ${renderLicenseLink(license)}
+    return ` 
+    This project is licensed by ${license}.${renderLicenseLink(license)}
       `;
     } else {
       return ' ';
@@ -77,14 +75,19 @@ function generateMarkdown(data) {
   
   ## [Contribute](#table-of-contents)
   
-  If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+  ${data.contribute}
   
-  ## Tests
-  
-  Go the extra mile and write tests for your application. Then provide examples on how to run them here.
-  
+  ## [Tests] (#table-of-contents)
 
-`;
+${data.tests}
+
+  ## [Questions] (#table-of-contents)
+  
+  
+Contact me through [e-mail](mailto:${data.email})
+
+Connect with me through[GitHub.](https://www.github.com/${data.username})
+  `;
 }
 
 module.exports = generateMarkdown;
