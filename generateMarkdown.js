@@ -47,7 +47,7 @@ function generateMarkdown(data) {
   ${data.description}
  
   
-  ## Table of Contents(#table-of-contents) 
+  ## Table of Contents 
   
   * [Installation](#installation)
   * [Usage](#usage)
@@ -79,7 +79,7 @@ function generateMarkdown(data) {
   
   ## [Tests](#table-of-contents)
 
-${data.tests}
+${data.test}
 
   ## [Questions](#table-of-contents)
   
