@@ -1,6 +1,7 @@
 # Professional README Generator
 
 ## Description
+
 This is an application that automatically generates a README.md file after answering a set of questions in the terminal.
 
 
@@ -29,3 +30,34 @@ This is an application that automatically generates a README.md file after answe
         THEN I am taken to the corresponding section of the README
 
         
+## Installation
+
+* 1) clone the repository
+* 2) run the command 'npm install'
+
+## Usage
+
+     1)run the command 'node index'
+     2)answer the question prompt until the "Readme file has been created" alert is shown
+
+## Demo 
+
+[step-by-step-video](readme-generator-functionality-sr.webm)
+
+
+## Credits
+
+ used https://choosealicense.com/ for the licenses \n https://shields.io/ is used for the badges and  used the  npm package inquirer 
+
+## License
+<br>
+
+## Contribute
+
+No more contributions are needed for this project.
+<br>
+
+## Tests
+
+To run a test run the following command in your terminal:
+    node index
